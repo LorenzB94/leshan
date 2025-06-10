@@ -12,7 +12,7 @@ leshan-lwm2m-core/ddffiles
 *.class
 
 # Maven build files #
-target
+**/target/
 
 # Eclipse files #
 bin/
