@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+		<Name>NetworkEvaluation</Name>
+		<Description1><![CDATA[Information package to perform a more detailed network analysis.]]></Description1>
+		<ObjectID>32999</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:x:32999:1.0</ObjectURN>
+		<LWM2MVersion>1.0</LWM2MVersion>
+		<ObjectVersion>1.0</ObjectVersion>
+		<MultipleInstances>Multiple</MultipleInstances>
+		<Mandatory>Optional</Mandatory>
+		<Resources>
+			<Item ID="1">
+				<Name>RRC STATE</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>0,1</RangeEnumeration>
+				<Units></Units>
+                <Description><![CDATA[
+					0: Idle, 
+					1: Connected
+				Describes the status of the radio connection between the modem and the mobile network.)]]></Description>
+			</Item>
+			<Item ID="2">
+				<Name>RSRP</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>-156..255</RangeEnumeration>
+				<Units>dBm</Units>
+				<Description><![CDATA[Signal strength of the received reference signal]]></Description>
+			</Item>
+			<Item ID="3">
+				<Name>RSRQ</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>-34..255</RangeEnumeration>
+				<Units>db</Units>
+				<Description><![CDATA[Signal quality based on RSRP and signal interference]]></Description>
+			</Item>
+			<Item ID="4">
+				<Name>SNR</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>-24..127</RangeEnumeration>
+				<Units>db</Units>
+				<Description><![CDATA[Ratio between received signal and background noise]]></Description>
+			</Item>
+			<Item ID="5">
+				<Name>Cell ID</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Identification number of the mobile phone cell]]></Description>
+			</Item>
+			<Item ID="6">
+				<Name>Band</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Frequency band of the mobile phone connection]]></Description>
+			</Item>
+			<Item ID="7">
+				<Name>MCC</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Fixed country code according to E.212. e.g. 262 for Germany]]></Description>
+			</Item>
+			<Item ID="8">
+				<Name>MNC</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Code to identify the mobile network. e.g. 1&1: 23; Telecom: 06, 01, 78]]></Description>
+			</Item>
+			<Item ID="9">
+				<Name>TX Power</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>-45..23</RangeEnumeration>
+				<Units>dBm</Units>
+				<Description><![CDATA[]]></Description>
+			</Item>
+			<Item ID="10">
+				<Name>TX Repetitions</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>1..2048</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[]]></Description>
+			</Item>
+			<Item ID="11">
+				<Name>RX Repetitions</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>1..2048</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[]]></Description>
+			</Item>
+		</Resources>
+        <Description2></Description2>
+	</Object>
+</LWM2M>
