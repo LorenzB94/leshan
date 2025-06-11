@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+		<Name>Measured Value</Name>
+		<Description1><![CDATA[Measured value object that represents the measured fill level with the necessary metadata.]]></Description1>
+		<ObjectID>33000</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:x:33000:1.0</ObjectURN>
+		<LWM2MVersion>1.0</LWM2MVersion>
+		<ObjectVersion>1.0</ObjectVersion>
+		<MultipleInstances>Multiple</MultipleInstances>
+		<Mandatory>Optional</Mandatory>
+		<Resources>
+			<Item ID="1">
+				<Name>Measurement Value</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Float</Type>
+				<RangeEnumeration>-0.5..120.5</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Distance value to the product.]]></Description>
+			</Item>
+			<Item ID="2">
+				<Name>Fill Level</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Float</Type>
+				<RangeEnumeration>-120.5..240.5</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Fill level of the product.]]></Description>
+			</Item>
+			<Item ID="3">
+				<Name>Measurement Unit</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Unit of the measurement value.]]></Description>
+			</Item>
+			<Item ID="4">
+				<Name>Percentage Value</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Float</Type>
+				<RangeEnumeration>-10..110</RangeEnumeration>
+				<Units>%</Units>
+				<Description><![CDATA[Fill level in percent according to the vessel height.]]></Description>
+			</Item>
+			<Item ID="5">
+				<Name>Linear Percentage Value</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Float</Type>
+				<RangeEnumeration>-10..110</RangeEnumeration>
+				<Units>%</Units>
+				<Description><![CDATA[Linearized fill level in percent according to vessel height.]]></Description>
+			</Item>
+			<Item ID="6">
+				<Name>Scaled Value</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Float</Type>
+				<RangeEnumeration>-99999..99999</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Scaled measured value.]]></Description>
+			</Item>
+			<Item ID="7">
+				<Name>Scaled Unit</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Unit of the scaled measured value.]]></Description>
+			</Item>
+			<Item ID="8">
+				<Name>Temperature Value</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Float</Type>
+				<RangeEnumeration>-60..100</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Electronics temperature of the device.]]></Description>
+			</Item>
+			<Item ID="9">
+				<Name>Temperature Unit</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>32..35</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Unit of the temperature value: 32=°C; 33=°F; 35=K]]></Description>
+			</Item>
+			<Item ID="10">
+				<Name>Measurement Reliability</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Float</Type>
+				<RangeEnumeration>0..150</RangeEnumeration>
+				<Units>db</Units>
+				<Description><![CDATA[Measurement Reliability]]></Description>
+			</Item>
+			<Item ID="11">
+				<Name>Supply Voltage DC/DC</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Float</Type>
+				<RangeEnumeration>0..40</RangeEnumeration>
+				<Units>V</Units>
+				<Description><![CDATA[Supply voltage of the sensor. Relevant for the DC/DC variant.]]></Description>
+			</Item>
+			<Item ID="12">
+				<Name>Measuring Rate</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Float</Type>
+				<RangeEnumeration>0..20</RangeEnumeration>
+				<Units>Hz</Units>
+				<Description><![CDATA[Measuring Rate.]]></Description>
+			</Item>
+			<Item ID="13">
+				<Name>Location Latitude</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Float</Type>
+				<RangeEnumeration>-180..180</RangeEnumeration>
+				<Units>deg</Units>
+				<Description><![CDATA[Coordinates displayed as latitude.]]></Description>
+			</Item>
+			<Item ID="14">
+				<Name>Location Longitude</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Float</Type>
+				<RangeEnumeration>-90..90</RangeEnumeration>
+				<Units>deg</Units>
+				<Description><![CDATA[Coordinates displayed as longitude.]]></Description>
+			</Item>
+			<Item ID="15">
+				<Name>Device Postion Angel</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>0..180</RangeEnumeration>
+				<Units>deg</Units>
+				<Description><![CDATA[Position angel of the device in degrees. 0° corresponds to vertical installation with the radar antenna pointing downwards.]]></Description>
+			</Item>
+			<Item ID="16">
+				<Name>Battery Charge</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>0..100</RangeEnumeration>
+				<Units>%</Units>
+				<Description><![CDATA[Battery charge level value in percent.]]></Description>
+			</Item>
+			<Item ID="17">
+				<Name>Namur State</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>0..4</RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Device status according to NAMUR NE107: 0=OK; 1=FUNCTION_CHECK; 2=MAINTENANCE; 3=OUT_OF_SPECIFICATION; 4=FAILURE]]></Description>
+			</Item>
+			<Item ID="18">
+				<Name>Detailed State</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Detailed device status defined by VEGA.]]></Description>
+			</Item>
+			<Item ID="19">
+				<Name>UTC Time</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Time</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units>s</Units>
+				<Description><![CDATA[Seconds since 01.01.1970 in UTC]]></Description>
+			</Item>
+			<Item ID="20">
+				<Name>Change Counter</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Change counter of the VVO3 parameters.]]></Description>
+			</Item>
+			<Item ID="21">
+				<Name>Signal Strength</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>Integer</Type>
+				<RangeEnumeration>0..100</RangeEnumeration>
+				<Units>%</Units>
+				<Description><![CDATA[Signal strength in percent. Is calculated via the SNR. 0: 0dB; 100: 50dB]]></Description>
+			</Item>
+		</Resources>
+        <Description2></Description2>
+	</Object>
+</LWM2M>
